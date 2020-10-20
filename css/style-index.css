@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body { font-family: ABeeZee; }
+.header { position: sticky; top: 0; text-align: center; font-family: "Impact", Charcoal, sans-serif; color: white; 
+		font-size: 1.5vw; padding: 10px; background-color: rgb(237, 29, 36); }
+.header img { display: block; margin-left: auto; margin-right: auto; width: 150px; }
+.header-left { position: absolute; left: 5px; top: 10px; }
+.header-right { position: absolute; right: 5px; top: 10px; }
+@media screen and (max-width: 700px) { .header p { position: relative; } }
+.menu { width: 10%; float: left; padding: 10px; }
+ul { list-style: none; margin: 0; padding: 0; }
+.middle { width: 65%; float: left; adding: 10px; }
+.info { width: 25%; float: left; padding: 10px; }
+.info h3 { text-align: center; }
+.info div { background-color: rgba(10,20,110, 0.5); border-radius: 15px; text-align: center; padding: ; }
+.info img { width: 95%; }
+.container:after { content: ""; display: table; clear: both; }
+@media screen and (max-width: 700px) { .container div { width: 100%; } }
+.footer { text-align: center; border: 1px solid black; }
+article { margin: 10px; padding: 15px; border-radius: 20px; border: 1px solid rgb(237, 29, 36); overflow: auto; }
+article h3 { color: white; text-align: center; margin-top: -5px; padding: 5px; border-radius: 20px 5px; animation-name: ani1; animation-duration:5s; animation-fill-mode: forwards; }
+article p { padding: 5px; }
+article img { width: 40%; margin: 5px; float: left; }
+a:link { color: black; }
+a:visited { color: red; }
+a:hover { color: blue; }
+a:active { background-color: blue; }
+@keyframes ani1 {
+	from { border: ridge white; }
+	to {background-color:rgb(237, 29, 36); border: ridge red; }
+	}

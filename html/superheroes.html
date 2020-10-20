@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="../css/style-superheroes.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encuesta</title>
+</head>
+<body>
+<div class="header">
+	<a href="../index.html">
+		<img src="../media/logo_marvel.png" alt="Logo Marvel" >
+	</a>
+	<p class="header-left">World's greatest comic company</p>
+	<p class="header-right">Since 1939</p>
+</div>
+<form class="personal">
+	<fieldset>
+		<legend>Datos personales</legend><br>
+		Nombre:<br>
+		<input type="text" name="nombre" maxlength="25" required autofocus> <br>
+		Apellido:<br>
+		<input type="text" name="apellido" maxlength="40" required> <br>
+		Fecha de nacimiento:<br>
+		<input type="date" name="fecha" placeholder="Fecha de nacimiento"><br>
+		Dirección:<br>
+		<input type="text" name="direccion"><br>
+		Superhéroe:<br>
+		<input list="superheroes" name="superheroes">
+		<datalist id="superheroes">
+			<option value="Vengadores"></option>
+			<option value="Deadpool"></option>
+			<option value="Guardianes"></option>
+			<option value="X-Men"></option>
+		</datalist><br>
+		Código postal:<br>
+		<input type="text" name="cp" pattern="[0-9]{5}" title="Cinco números del 0 al 9"><br>
+		Mail:<br>
+		<input type="email" name="mail" placeholder="ejemplo@ejemplo.com" required><br>
+		Foto:<br>
+		<input type="file" name="foto"><br><br>
+		<input type="reset" value="Reiniciar">
+		<input type="submit" value="Confirmar">
+	</fieldset>
+</form>
+<form class="academico">
+	<fieldset>
+		<legend>Datos académicos</legend><br>
+		<label for="curso1">Curso:</label>
+		<select name="curso1">
+			<option value="marvel">Marvel</option>
+			<option value="dc">DC</option>
+		</select><br><br>
+		<label for="curso2">Año académico:</label>
+		<label><input type="radio" name="curso2" value="primero"> Primer curso</label>
+		<label><input type="radio" name="curso2" value="segundo"> Segundo curso</label><br><br>
+		<label>Superpoderes:<br>
+		<label><input type="checkbox" name="super1" value="fuerza">Fuerza</label><br>
+		<label><input type="checkbox" name="super1" value="teletransporte">Teletransporte</label><br>
+		<label><input type="checkbox" name="super1" value="viajetemp">Viajar en el tiempo</label><br>
+		<label><input type="checkbox" name="super1" value="fuego">Fuego</label><br>
+		<label><input type="checkbox" name="super1" value="elasticidad">Elasticidad</label><br>
+		<label><input type="checkbox" name="super1" value="inmortalidad">Inmortalidad</label></label><br><br>
+		<label>Número de cursos: <input type="text" pattern="[0-6]{1-6}" class="curso"></label><br><br>
+		<label>Observaciones: <input type="textarea" class="txt"></label><br><br>
+		<input type="reset" value="Reiniciar">
+		<input type="submit" value="Confirmar">
+	</fieldset>
+</form>
+</body>
+</html>

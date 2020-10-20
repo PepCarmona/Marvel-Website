@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { font-family: ABeeZee; }
+.header { position: sticky; top: 0; text-align: center; font-family: "Impact", Charcoal, sans-serif; color: white; 
+		font-size: 1.5vw; padding: 10px; background-color: rgb(237, 29, 36); }
+.header img { display: block; margin-left: auto; margin-right: auto; width: 150px; }
+.header-left { position: absolute; left: 5px; top: 10px; }
+.header-right { position: absolute; right: 5px; top: 10px; }
+.personal { float: left; width: 50%; }
+.academico { float: left; width: 50%; }
+.txt { width: 200px; height: 100px; }
+.curso {width: 60px; }
+@media screen and (max-width: 700px) { .header p { position: relative; } .personal { width:100%; } .academico { width:100%; } }
